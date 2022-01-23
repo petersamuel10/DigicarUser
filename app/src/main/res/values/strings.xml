@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Digi Car</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Setting</string>
+    <string name="terms_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="new_user">New User</string>
+</resources>
