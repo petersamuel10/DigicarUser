@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        tools:layout_editor_absoluteX="29dp">
+
+        <EditText
+            android:id="@+id/nameInEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:drawableStart="@drawable/ic_mail"
+            android:drawablePadding="@dimen/_8sdp"
+            android:hint="@string/user_name"
+            android:includeFontPadding="true"
+            android:inputType="textEmailAddress"
+            android:paddingStart="0dp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/_14ssp" />
+
+        <EditText
+            android:id="@+id/phoneInEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:drawableStart="@drawable/ic_mail"
+            android:drawablePadding="@dimen/_8sdp"
+            android:hint="@string/phone_number"
+            android:includeFontPadding="true"
+            android:inputType="phone"
+            android:paddingStart="0dp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/_14ssp" />
+
+        <EditText
+            android:id="@+id/passwordInEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:backgroundTint="@color/grey"
+            android:drawableStart="@drawable/ic_pass"
+            android:drawablePadding="@dimen/_4sdp"
+            android:hint="@string/password"
+            android:includeFontPadding="true"
+            android:inputType="textPassword"
+            android:paddingStart="0dp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:text="Create account"
+            app:backgroundTint="@color/purple" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
