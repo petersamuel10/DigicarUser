@@ -6,4 +6,5 @@ import javax.inject.Inject
 class MainRepository @Inject constructor(private val apiHelper: ApiHelper) {
 
     suspend fun addConsultation(txt: String) = apiHelper.addConsultation(txt)
+    suspend fun getAllConsultation() = apiHelper.getAllConsultation()
 }

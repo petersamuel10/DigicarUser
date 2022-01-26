@@ -35,6 +35,7 @@ class MainViewModel @Inject constructor(
             mainIntent.consumeAsFlow().collect {
                 when (it) {
                     is MainIntent.AddConsultation -> addConsultation(it.consultation)
+                    is MainIntent.getAllConsultation -> getAllConsultation()
                 }
             }
         }
@@ -47,6 +48,14 @@ class MainViewModel @Inject constructor(
             val result = repository.addConsultation(consultation)
             if (result != null)
                 _state.value = MainViewState.AddConsultation(result)
+        }
+    }
+
+    private fun getAllConsultation() {
+
+        viewModelScope.launch {
+            _state.value = MainViewState.Loading
+            _state.value = MainViewState.getAllConsultation(repository.getAllConsultation())
         }
     }
 

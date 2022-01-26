@@ -4,9 +4,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class User(
+data class ConsultationModel(
     @PrimaryKey(autoGenerate = true)
-    val id: Int = 0,
-    val userName: String = "",
-    val phoneNumber: String = ""
+    val id:Int,
+    val timeTxt: String,
+    val txt: String,
+    var isFav:Boolean
 )
